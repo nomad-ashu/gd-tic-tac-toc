@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.player-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.player {
+    display: inline-block;
+    margin: 1rem 5rem;
+}
+
+.p-1-img {
+    background-image: url(img/close.png);
+    display: inline-block;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+.p-2-img {
+    background-image: url(img/circle.png);
+    display: inline-block;
+    min-width: 36px;
+    min-height: 36px;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-container h2 {
+    margin: 3% 5%;
+}
+
+.grid {
+    margin: auto;
+    padding: 5%;
+    background-color: silver;
+}
+
+.row {
+    display: flex;
+    max-width: 20rem;
+    justify-content: center;
+}
+
+.cell {
+    box-sizing: border-box;
+    padding: 36px;
+    width: 4rem;
+    height: 4rem;
+}
+
+#c-1, #c-2, #c-3, #c-4, #c-5, #c-6 {
+    border-bottom:1px solid black;
+}
+
+#c-2, #c-8, #c-5 {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* to hide current player block when game ends */
+.hidden {
+    display: none
+}
